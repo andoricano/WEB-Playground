@@ -1,25 +1,15 @@
 <html>
-
-<head>
-  <link rel="stylesheet" href="/css/test.css" />
-  <title>css_test</title>
-</head>
-
-<body>
-  <h1 id="title">Hello</h1>
-  <button id="btn">Click me</button>
-  <div>abcds</div>
-  <div class="divgood">Good.</div>
-
-  <style>
-    :root {
-      --main-color: green;
-    }
-
-    #myDiv {
-      color: var(--main-color);
-    }
-  </style>
+  <head>
+    <link rel="stylesheet" href="/css/scss.css" />
+    <title>css_test</title>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <button id="btn">Click me</button>
+    <div>abcds</div>
+    
+    
+    
   <script>
     const root = document.documentElement;
     const rootStyles = getComputedStyle(root);
@@ -31,7 +21,5 @@
       console.log(orange); // "red"
     });
   </script>
-
-</body>
-
+  </body>
 </html>

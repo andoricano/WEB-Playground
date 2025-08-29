@@ -1,9 +1,33 @@
-main{
-    width: 100%;
+:root {
+    --orange: yellow;
+    --yellow: yellow;
+    --green: green;
+    --blue: blue;
+    --violet: violet;
+    --a: var(--violet);
+    --hello: var(--violet);
+    --world: var(--yellow);
+    --red: blue;
+    --red: red;
+    --red: red;
+    --red: red;
+    --red: red;
+    --red: blue;
 }
 
-p{
-    margin : 10px auto;
-    width: 200px;   
-    background-color:palegoldenrod;
+div {
+    width: 100%;
+    background-color: var(--red);
+}
+
+.divgood {
+    width: 100px;
+    height: 100px;
+    background-color: var(--a);
+}
+
+p {
+    margin: 10px auto;
+    width: 200px;
+    background-color: palegoldenrod;
 }

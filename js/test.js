@@ -1,4 +1,7 @@
 function showFirstParagraph() {
-    const paragraphs = document.querySelectorAll("p");
-    console.log(paragraphs[0].textContent)
+    const allElements = document.querySelectorAll("*");
+    console.log(allElements); // 요소 객체 출력
+    allElements.forEach(el => {
+        console.log(el, getComputedStyle(el).backgroundColor);
+    });
 }
