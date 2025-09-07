@@ -10,25 +10,25 @@
   <button id="btn">Click me</button>
   <div>abcds</div>
   <div class="divgood">Good.</div>
-
-  <style>
-    :root {
-      --main-color: green;
-    }
-
-    #myDiv {
-      color: var(--main-color);
-    }
+  <p>p good</p>
   </style>
   <script>
     const root = document.documentElement;
     const rootStyles = getComputedStyle(root);
     const btn = document.getElementById("btn");
+    let redValue = rootStyles.getPropertyValue('--red').trim();
+    let orange = rootStyles.getPropertyValue('--orange').trim(); 
+    let palegoldenrod = rootStyles.getPropertyValue('--palegoldenrod').trim(); 
+    const p = document.querySelector('p');
+    const style = getComputedStyle(p);
+
     btn.addEventListener("click", () => {
-      const redValue = rootStyles.getPropertyValue('--red').trim();
       console.log(redValue); // "red"
-      const orange = rootStyles.getPropertyValue('--orange').trim();
-      console.log(orange); // "red"
+
+      console.log(orange);// "yellow"
+      redValue = orange;
+      console.log(palegoldenrod);// ""
+      console.log(style.backgroundColor);// "palegoldenrod"
     });
   </script>
 

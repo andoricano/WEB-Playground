@@ -15,9 +15,9 @@
     const rootStyles = getComputedStyle(root);
     const btn = document.getElementById("btn");
     btn.addEventListener("click", () => {
-      const redValue = rootStyles.getPropertyValue('--red').trim();
+      const redValue = rootStyles.getPropertyValue('*').trim();
       console.log(redValue); // "red"
-      const orange = rootStyles.getPropertyValue('--orange').trim();
+      const orange = rootStyles.getPropertyValue('orange').trim();
       console.log(orange); // "red"
     });
   </script>

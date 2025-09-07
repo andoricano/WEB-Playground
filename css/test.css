@@ -5,14 +5,8 @@
     --blue: blue;
     --violet: violet;
     --a: var(--violet);
-    --hello: var(--violet);
-    --world: var(--yellow);
     --red: blue;
     --red: red;
-    --red: red;
-    --red: red;
-    --red: red;
-    --red: blue;
 }
 
 div {
