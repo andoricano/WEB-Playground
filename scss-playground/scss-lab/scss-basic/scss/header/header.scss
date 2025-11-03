@@ -1,0 +1,51 @@
+@use "sass:map";
+
+$color :(base: rgb(0, 0, 0),
+    nav: rgb(26, 22, 22),
+    header-main: rgb(26, 22, 22),
+    header-deco: rgb(71, 173, 182));
+    
+header {
+    background-color: #ae0d0d;
+    position: relative;
+    width: 1180px;
+    height: 120px;
+
+    // >h1 {
+    //     position: absolute;
+    //     left: 10px;
+    //     bottom: 15px;
+    // }
+
+    // .global_navigation_bar {
+    //     right: 0px;
+    //     bottom: 0px;
+    //     font-size: 20px;
+    //     padding-right: 16px;
+
+    //     >li {
+    //         margin: 0px 30px 15px;
+
+    //         >a {
+    //             text-decoration: none;
+    //             font-weight: 1000;
+    //             color: map.get($color, header-main);
+
+    //             &:hover {
+    //                 color: map.get($color, header-deco);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // >.utility_bar {
+    //     right: 30px;
+    //     top: 20px;
+    //     font-size: 11px;
+    //     margin: 0 auto;
+
+    //     >li {
+    //         margin: 0px 14px;
+    //     }
+    // }
+}
