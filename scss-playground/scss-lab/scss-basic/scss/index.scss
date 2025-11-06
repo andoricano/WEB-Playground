@@ -1,21 +1,7 @@
-@import 'header/header.scss';
+@use '../scss_composable/base/all_base.scss';
+@use 'header/chef_header.scss';
+@use '../scss_composable/base/body_base.scss';
 
 
-body {
-    font: {
-        size: 10px;
-        style: italic;
-    }
-
-    margin: {
-        left: 10px;
-        top: 20px;
-
-    }
-
-    width: 1500px;
-    height: 2000px;
-
-}
 
 @debug SCSS compiler

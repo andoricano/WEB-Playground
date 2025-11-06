@@ -1,0 +1,5 @@
+@use '../../scss_composable/header/header.scss' as h;
+
+header {
+  @include h.header-composable(80%);
+}
