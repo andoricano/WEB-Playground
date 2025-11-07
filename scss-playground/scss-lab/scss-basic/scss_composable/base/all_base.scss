@@ -1,4 +1,7 @@
-*{
+$font-family-base: Verdana, Geneva, Tahoma, sans-serif;
+
+* {
+    font-family: $font-family-base;
     margin: 0 auto;
-    padding : 0;
+    padding: 0;
 }

@@ -1,0 +1,21 @@
+@mixin nav-list_a_bar($li-margin: 0 30px 15px,
+    $a-color: #000,
+    $a-hover-color: #f00) {
+    ul {
+        float: left;
+
+        li {
+            margin: $li-margin;
+
+            a {
+                text-decoration: none;
+                font-weight: 1000;
+                color: $a-color;
+
+                &:hover {
+                    color: $a-hover-color;
+                }
+            }
+        }
+    }
+}

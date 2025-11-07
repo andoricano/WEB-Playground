@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/header/chef_header.scss","../scss_composable/header/header.scss"],"names":[],"mappings":"AAEA;ECCE;EACA;EACA,ODF6B;ECG7B","file":"chef_header.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/header/chef_header.scss","../scss_composable/header/header.scss"],"names":[],"mappings":"AAEA;ECDE,kBDEiC;ECDjC;EACA;EACA;;ADCA;EACE;EACA;EACA","file":"chef_header.css"}

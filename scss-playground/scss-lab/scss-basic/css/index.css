@@ -4,10 +4,15 @@
 }
 
 header {
-  background-color: #be2626;
+  background-color: #1a73e8;
   position: relative;
   width: 80%;
   height: 120px;
+}
+header > h1 {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
 }
 
 body {
@@ -15,4 +20,27 @@ body {
   font-style: italic;
   margin: 0 auto;
   width: 100%;
+}
+
+nav {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-right: 16px;
+  background-color: blue;
+}
+nav ul {
+  float: left;
+}
+nav ul li {
+  margin: 0 20px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #333;
+}
+nav ul li a:hover {
+  color: #765a9b;
 }/*# sourceMappingURL=index.css.map */
