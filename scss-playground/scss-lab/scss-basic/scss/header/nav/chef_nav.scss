@@ -7,7 +7,6 @@ nav {
     margin: 0 auto;
     font-size: 20px;
     padding-right: 16px;
-    background-color: blue;
 
-    @include n.nav-list_a_bar((0 20px 10px), #333, #765a9b);
+    @include n.nav-list_a_bar((0 35px 20px), #333, #765a9b);
 }

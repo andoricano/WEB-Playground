@@ -2,9 +2,14 @@
     $a-color: #000,
     $a-hover-color: #f00) {
     ul {
-        float: left;
+        position: absolute;
+        display: inline-block;
+        list-style-type: none;
+        right: 0px;
+        bottom: 0px;
 
         li {
+            float: left;
             margin: $li-margin;
 
             a {
