@@ -4,18 +4,12 @@
   $li-margin: 0 30px 15px,
   $a-color: #000,
   $a-hover-color: #f00,
-  $position_detail: (top: auto, right: 0, bottom: 0, left: auto),
   $font-size: 20px 
 ) {
   ul {
-    position: absolute;
+    width: 100%;
     display: inline-block;
     list-style-type: none;
-
-    top: map.get($position_detail, top);
-    right: map.get($position_detail, right);
-    bottom: map.get($position_detail, bottom);
-    left: map.get($position_detail, left);
 
     li {
       float: left;

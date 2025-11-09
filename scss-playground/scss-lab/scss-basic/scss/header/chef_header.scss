@@ -1,9 +1,10 @@
 @use '../../scss_composable/header/header.scss' as h;
 
 header {
-  @include h.header-composable(80%,#1a73e8);
+  @include h.header-composable(1180px, #bfc9d6);
 
   >h1 {
+    position: absolute;
     left: 10px;
     bottom: 15px;
   }

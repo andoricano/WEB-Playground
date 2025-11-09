@@ -1,0 +1,17 @@
+@use '../../../scss_composable/header/navigation/nav_list_a_bar.scss' as n;
+
+
+.util_list {
+    margin: 0 auto;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+
+    @include n.nav-list_a_bar(0 14px,
+        #ab8c8c,
+        #ad9cc3,
+        11px);
+
+}

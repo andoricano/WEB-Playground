@@ -1,23 +1,16 @@
 nav {
-  position: relative;
-  width: 1180px;
-  height: 120px;
-  margin: 0 auto;
-  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
 }
 nav ul {
   width: 100%;
-  position: absolute;
   display: inline-block;
   list-style-type: none;
-  top: auto;
-  right: 35px;
-  bottom: 0;
-  left: 75px;
 }
 nav ul li {
   float: left;
-  margin: 0 35px 15px;
+  margin: 0 35px 0;
 }
 nav ul li a {
   text-decoration: none;
@@ -27,4 +20,4 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #765a9b;
-}/*# sourceMappingURL=chef_nav.css.map */
+}/*# sourceMappingURL=chef_nav_list.css.map */

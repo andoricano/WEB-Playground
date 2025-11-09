@@ -5,12 +5,13 @@
 }
 
 header {
-  background-color: #1a73e8;
+  background-color: #bfc9d6;
   position: relative;
-  width: 80%;
+  width: 1180px;
   height: 120px;
 }
 header > h1 {
+  position: absolute;
   left: 10px;
   bottom: 15px;
 }
@@ -23,24 +24,18 @@ body {
 }
 
 nav {
-  position: relative;
-  width: 1180px;
-  height: 120px;
-  margin: 0 auto;
-  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
 }
 nav ul {
-  position: absolute;
+  width: 100%;
   display: inline-block;
   list-style-type: none;
-  top: auto;
-  right: 35px;
-  bottom: 0;
-  left: 35px;
 }
 nav ul li {
   float: left;
-  margin: 0 35px 20px;
+  margin: 0 35px 0;
 }
 nav ul li a {
   text-decoration: none;
@@ -50,4 +45,30 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #765a9b;
+}
+
+.util_list {
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.util_list ul {
+  width: 100%;
+  display: inline-block;
+  list-style-type: none;
+}
+.util_list ul li {
+  float: left;
+  margin: 0 14px;
+}
+.util_list ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #ab8c8c;
+  font-size: 11px;
+}
+.util_list ul li a:hover {
+  color: #ad9cc3;
 }/*# sourceMappingURL=index.css.map */

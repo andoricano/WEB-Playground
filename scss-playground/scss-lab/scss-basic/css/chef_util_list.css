@@ -1,0 +1,25 @@
+.util_list {
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.util_list ul {
+  width: 100%;
+  display: inline-block;
+  list-style-type: none;
+}
+.util_list ul li {
+  float: left;
+  margin: 0 14px;
+}
+.util_list ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #ab8c8c;
+  font-size: 11px;
+}
+.util_list ul li a:hover {
+  color: #ad9cc3;
+}/*# sourceMappingURL=chef_util_list.css.map */
