@@ -1,26 +1,36 @@
-@mixin nav-list_a_bar($li-margin: 0 30px 15px,
-    $a-color: #000,
-    $a-hover-color: #f00) {
-    ul {
-        position: absolute;
-        display: inline-block;
-        list-style-type: none;
-        right: 0px;
-        bottom: 0px;
+@use "sass:map";
 
-        li {
-            float: left;
-            margin: $li-margin;
+@mixin nav-list_a_bar(
+  $li-margin: 0 30px 15px,
+  $a-color: #000,
+  $a-hover-color: #f00,
+  $position_detail: (top: auto, right: 0, bottom: 0, left: auto),
+  $font-size: 20px 
+) {
+  ul {
+    position: absolute;
+    display: inline-block;
+    list-style-type: none;
 
-            a {
-                text-decoration: none;
-                font-weight: 1000;
-                color: $a-color;
+    top: map.get($position_detail, top);
+    right: map.get($position_detail, right);
+    bottom: map.get($position_detail, bottom);
+    left: map.get($position_detail, left);
 
-                &:hover {
-                    color: $a-hover-color;
-                }
-            }
+    li {
+      float: left;
+      margin: $li-margin;
+
+      a {
+        text-decoration: none;
+        font-weight: 1000;
+        color: $a-color;
+        font-size: $font-size;
+
+        &:hover {
+          color: $a-hover-color;
         }
+      }
     }
+  }
 }

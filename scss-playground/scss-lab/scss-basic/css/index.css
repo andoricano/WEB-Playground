@@ -11,7 +11,6 @@ header {
   height: 120px;
 }
 header > h1 {
-  position: absolute;
   left: 10px;
   bottom: 15px;
 }
@@ -24,18 +23,20 @@ body {
 }
 
 nav {
+  position: relative;
   width: 1180px;
   height: 120px;
   margin: 0 auto;
   font-size: 20px;
-  padding-right: 16px;
 }
 nav ul {
   position: absolute;
   display: inline-block;
   list-style-type: none;
-  right: 0px;
-  bottom: 0px;
+  top: auto;
+  right: 35px;
+  bottom: 0;
+  left: 35px;
 }
 nav ul li {
   float: left;
@@ -45,6 +46,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 1000;
   color: #333;
+  font-size: 22px;
 }
 nav ul li a:hover {
   color: #765a9b;
