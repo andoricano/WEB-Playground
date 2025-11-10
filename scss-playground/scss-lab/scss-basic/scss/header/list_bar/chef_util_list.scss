@@ -1,6 +1,6 @@
-@use '../../../scss_composable/header/navigation/nav_list_a_bar.scss' as n;
+@use '../../../scss_module/list/row_list_a_bar.scss'  as n;
 
-
+// utility bar를 직접적으로 조절하는 property
 .util_list {
     margin: 0 auto;
     font-size: 20px;
@@ -9,7 +9,7 @@
     right: 30px;
 
 
-    @include n.nav-list_a_bar(0 14px,
+    @include n.row_list_a_bar(0 14px,
         #ab8c8c,
         #ad9cc3,
         11px);

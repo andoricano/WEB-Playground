@@ -1,0 +1,15 @@
+@use '../../../scss_module/list/row_list_a_bar.scss'  as n;
+
+// nav semantic tag를 직접적으로 조절하는 property
+nav {
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+
+
+    @include n.row_list_a_bar(0 35px 0,
+        #333,
+        #765a9b,
+        22px);
+
+}

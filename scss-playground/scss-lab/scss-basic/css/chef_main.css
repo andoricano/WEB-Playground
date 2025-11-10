@@ -1,11 +1,11 @@
-header {
+main {
   background-color: #bda3a3;
   position: relative;
   width: 100%;
   height: 120px;
 }
-header > h1 {
+main > h1 {
   position: absolute;
   left: 10px;
   bottom: 15px;
-}/*# sourceMappingURL=chef_header.css.map */
+}/*# sourceMappingURL=chef_main.css.map */

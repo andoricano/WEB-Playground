@@ -1,0 +1,28 @@
+nav {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-right: 16px;
+}
+nav ul {
+  position: absolute;
+  display: inline-block;
+  list-style-type: none;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+nav ul li {
+  float: left;
+  margin: 0 35px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #333;
+}
+nav ul li a:hover {
+  color: #765a9b;
+}/*# sourceMappingURL=chef_nav.css.map */

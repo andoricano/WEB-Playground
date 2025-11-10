@@ -1,0 +1,28 @@
+@use "sass:map";
+
+@mixin title_content($size: (auto auto),
+    $content-margin: 0 0 0 0,
+    $title-bgc: transparent,
+    $title-text-color: #000,
+    $content-bgc: transparent,
+    $content-text-color: #000,
+) {
+
+    width: nth($size, 1);
+    height: nth($size, 2);
+    margin: $content-margin;
+
+
+    >p:first-child {
+        margin: $title-margin;
+        background-color: $title-bgc;
+        color: $title-text-color;
+        font-weight: 700;
+    }
+
+
+    >p:not(:first-child) {
+        background-color: $content-bgc;
+        color: $content-text-color;
+    }
+}
