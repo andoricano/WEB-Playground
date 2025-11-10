@@ -1,14 +1,15 @@
+@use './chef_text_box.scss' as tBox;
+
+
 main {
+    position: relative;
+    width: 100%;
+    height: 590px;
+    padding-top: 0.1px; //margin collapse 방지하는 여러가지 방법 중 이런 방법도 있다네요.
 
-  background-color: #bda3a3;
-  position: relative;
-  width: 100%;
-  height: 120px;
 
-  >h1 {
-    position: absolute;
-    left: 10px;
-    bottom: 15px;
-  }
 
+    >.main_text_box {
+        @include tBox.main_text_box();
+    }
 }

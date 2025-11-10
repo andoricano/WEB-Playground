@@ -1,0 +1,22 @@
+@use '../../scss_module/text/title_content.scss' as tc;
+
+
+//semantic에 구성될 scss_module 구현체를 layer로 삼는게 괜찮아보여서 이렇게 구현.
+@mixin main_text_box {
+    width: 800px;
+    margin: 150px auto;
+
+    @include tc.title_content(
+        $title-bgc: transparent,
+        $title-text-color: #fff,
+        $title-size: 80px,
+        $title-margin: 0,
+        $content-bgc: transparent,
+        $content-text-color: #fff,
+        $content-size: 25px,
+        $content-margin: 0);
+
+    >p {
+        font-weight: 1000;
+    }
+}

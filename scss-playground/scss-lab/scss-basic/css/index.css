@@ -71,4 +71,31 @@ nav ul li a:hover {
 }
 .util_list ul li a:hover {
   color: #ad9cc3;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  padding-top: 0.1px;
+}
+main > .main_text_box {
+  width: 800px;
+  margin: 150px auto;
+}
+main > .main_text_box > p:first-child {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 80px;
+}
+main > .main_text_box > p:not(:first-child) {
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+}
+main > .main_text_box > p {
+  font-weight: 1000;
 }/*# sourceMappingURL=index.css.map */
