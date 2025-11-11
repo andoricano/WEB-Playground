@@ -18,7 +18,7 @@ section {
 
 
     article {
-        @include tBox.article();
+        @include tBox.title-content();
 
         @for $i from 1 through 3 {
             &:nth-child(#{$i+1}) { 

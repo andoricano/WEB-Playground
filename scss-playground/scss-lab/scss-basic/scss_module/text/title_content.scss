@@ -1,5 +1,6 @@
 @use "sass:list";
 
+//기본적으로 alpa + Title Text + content text 형식이 굉장히 많았기 때문에 만든 mixin.
 @mixin title_content(
   $title-bgc: transparent,
   $title-text-color: #000,

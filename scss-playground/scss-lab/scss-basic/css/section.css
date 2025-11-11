@@ -25,7 +25,7 @@ section article > p:not(:first-of-type) {
   margin: 0;
   background-color: transparent;
   color: #000;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
 }
 section article:nth-child(2) {

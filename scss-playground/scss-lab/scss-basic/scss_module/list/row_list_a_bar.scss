@@ -1,5 +1,6 @@
 @use "sass:map";
 
+//nav bar나 utility bar를 만들 때 사용하기 좋은 mixin.
 @mixin row_list_a_bar(
   $li-margin: 0 30px 15px,
   $a-color: #000,
