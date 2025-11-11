@@ -1,0 +1,21 @@
+@use '../../scss_module/text/title_content.scss' as tc;
+
+
+@mixin article {
+    width: 230px;
+    margin: 0px auto;
+    float: left;
+    @include tc.title_content(
+        $title-bgc: transparent,
+        $title-text-color: #000,
+        $title-size: 10px,
+        $title-margin: 0,
+        $content-bgc: transparent,
+        $content-text-color: #000,
+        $content-size: 15px,
+        $content-margin: 0);
+
+    >p {
+        font-weight: 1000;
+    }
+}
