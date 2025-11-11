@@ -6,15 +6,16 @@
     width: 800px;
     margin: 150px auto;
 
-    @include tc.title_content(
-        $title-bgc: transparent,
+    @include tc.title_content($title-bgc: transparent,
         $title-text-color: #fff,
         $title-size: 80px,
         $title-margin: 0,
+        $title-weight: 1000,
         $content-bgc: transparent,
         $content-text-color: #fff,
         $content-size: 25px,
-        $content-margin: 0);
+        $content-margin: 0,
+        $content-weight: 600);
 
     >p {
         font-weight: 1000;

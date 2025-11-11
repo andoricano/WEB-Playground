@@ -17,8 +17,6 @@ header > h1 {
 }
 
 body {
-  font-size: 10px;
-  font-style: italic;
   margin: 0 auto;
   width: 100%;
 }
@@ -81,18 +79,19 @@ main > .main_text_box {
   width: 800px;
   margin: 150px auto;
 }
-main > .main_text_box > p:first-child {
+main > .main_text_box > p:first-of-type {
   margin: 0;
   background-color: transparent;
   color: #fff;
-  font-weight: 700;
   font-size: 80px;
+  font-weight: 1000;
 }
-main > .main_text_box > p:not(:first-child) {
+main > .main_text_box > p:not(:first-of-type) {
   margin: 0;
   background-color: transparent;
   color: #fff;
   font-size: 25px;
+  font-weight: 600;
 }
 main > .main_text_box > p {
   font-weight: 1000;
@@ -100,7 +99,7 @@ main > .main_text_box > p {
 
 section {
   position: relative;
-  width: 1150px;
+  width: 1080px;
   height: 450px;
 }
 section > p {
@@ -109,90 +108,31 @@ section > p {
   font-size: 20px;
   font-weight: 1000;
 }
-section:nth-child(2) article {
-  width: 230px;
-  margin: 0px auto;
-  float: left;
-  margin-right: 53.3333333333px;
-}
-section:nth-child(2) article > p:first-child {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-weight: 700;
-  font-size: 10px;
-}
-section:nth-child(2) article > p:not(:first-child) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 15px;
-}
-section:nth-child(2) article > p {
-  font-weight: 1000;
-}
-section:nth-child(3) article {
-  width: 230px;
-  margin: 0px auto;
-  float: left;
-  margin-right: 53.3333333333px;
-}
-section:nth-child(3) article > p:first-child {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-weight: 700;
-  font-size: 10px;
-}
-section:nth-child(3) article > p:not(:first-child) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 15px;
-}
-section:nth-child(3) article > p {
-  font-weight: 1000;
-}
-section:nth-child(4) article {
-  width: 230px;
-  margin: 0px auto;
-  float: left;
-  margin-right: 53.3333333333px;
-}
-section:nth-child(4) article > p:first-child {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-weight: 700;
-  font-size: 10px;
-}
-section:nth-child(4) article > p:not(:first-child) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 15px;
-}
-section:nth-child(4) article > p {
-  font-weight: 1000;
-}
 section article {
   width: 230px;
   margin: 0px auto;
   float: left;
 }
-section article > p:first-child {
+section article > p:first-of-type {
   margin: 0;
   background-color: transparent;
   color: #000;
-  font-weight: 700;
-  font-size: 10px;
-}
-section article > p:not(:first-child) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 15px;
-}
-section article > p {
+  font-size: 16px;
   font-weight: 1000;
+}
+section article > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+section article:nth-child(2) {
+  margin-right: 53.3333333333px;
+}
+section article:nth-child(3) {
+  margin-right: 53.3333333333px;
+}
+section article:nth-child(4) {
+  margin-right: 53.3333333333px;
 }/*# sourceMappingURL=index.css.map */

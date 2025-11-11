@@ -5,17 +5,14 @@
     width: 230px;
     margin: 0px auto;
     float: left;
-    @include tc.title_content(
-        $title-bgc: transparent,
+    @include tc.title_content($title-bgc: transparent,
         $title-text-color: #000,
-        $title-size: 10px,
+        $title-size: 16px,
         $title-margin: 0,
+        $title-weight: 1000,
         $content-bgc: transparent,
         $content-text-color: #000,
-        $content-size: 15px,
-        $content-margin: 0);
-
-    >p {
-        font-weight: 1000;
-    }
+        $content-size: 16px,
+        $content-margin: 0,
+        $content-weight: 400);
 }

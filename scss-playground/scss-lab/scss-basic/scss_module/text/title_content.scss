@@ -5,24 +5,27 @@
   $title-text-color: #000,
   $title-size: 80px,
   $title-margin: 0,
+  $title-weight: 1000,
   $content-bgc: transparent,
   $content-text-color: #000,
   $content-size: 25px,
-  $content-margin: 0
+  $content-margin: 0,
+  $content-weight: 600
 ) {
 
-  > p:first-child {
+  > p:first-of-type{
     margin: $title-margin;
     background-color: $title-bgc;
     color: $title-text-color;
-    font-weight: 700;
     font-size: $title-size;
+    font-weight: $title-weight;
   }
 
-  > p:not(:first-child) {
+  > p:not(:first-of-type) {
     margin: $content-margin;
     background-color: $content-bgc;
     color: $content-text-color;
     font-size: $content-size;
+    font-weight: $content-weight;
   }
 }
