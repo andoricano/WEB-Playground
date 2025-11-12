@@ -1,0 +1,12 @@
+@mixin info {
+    p {
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        color: white;
+        display: block;
+        padding: 10px;
+        font-size: 11px;
+    }
+}

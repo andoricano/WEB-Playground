@@ -1,4 +1,5 @@
 @use './business.scss' as bus;
+@use './info.scss' as info;
 
 
 footer {
@@ -8,4 +9,5 @@ footer {
   height: 180px;
 
   @include bus.business;
+  @include info.info;
 }
