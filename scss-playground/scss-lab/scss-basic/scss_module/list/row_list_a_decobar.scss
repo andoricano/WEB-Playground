@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "./row_list_a_bar.scss" as n;
+
+@mixin row_list_a_decobar(
+  $li-margin: 0 30px 15px,
+  $a-color: #000,
+  $a-hover-color: #f00,
+  $font-size: 20px,
+  $border-color: white,
+  $border-width: 2px,
+  $padding-row: 15px
+) {
+  @include n.row_list_a_bar($li-margin, $a-color, $a-hover-color, $font-size);
+
+  ul li {
+    display: inline-block;
+    padding: 0 $padding-row;
+    border-right: $border-width solid $border-color;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

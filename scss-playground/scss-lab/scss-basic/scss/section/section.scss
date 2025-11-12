@@ -1,5 +1,5 @@
 @use "sass:math";
-@use './article.scss' as tBox;
+@use './article-title-content.scss' as tBox;
 
 $article-margin: math.div(1080px - 230px * 4, 3);
 
@@ -18,7 +18,7 @@ section {
 
 
     article {
-        @include tBox.title-content();
+        @include tBox.article-title-content();
 
         @for $i from 1 through 3 {
             &:nth-child(#{$i+1}) { 

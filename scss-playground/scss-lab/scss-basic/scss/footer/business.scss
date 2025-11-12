@@ -1,0 +1,33 @@
+@use '../../scss_module/list/row_list_a_decobar.scss' as n;
+
+@mixin business {
+    .bg {
+        width: 1000px;
+        height: 100px;
+        box-sizing: border-box;
+        position: relative;
+
+        >h1 {
+            position: absolute;
+            left: 10px;
+            bottom: 15px;
+            margin: 0 auto;
+        }
+
+        @include n.row_list_a_decobar(0 0,
+            #cdb6b6,
+            #765a9b,
+            13px,
+            white,
+            2px,
+            15px);
+
+
+        //재사용을 한 후 ul의 위치를 조정하는 코드.
+        ul {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+        }
+    }
+}

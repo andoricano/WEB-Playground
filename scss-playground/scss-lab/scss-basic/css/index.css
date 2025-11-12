@@ -135,4 +135,53 @@ section article:nth-child(3) {
 }
 section article:nth-child(4) {
   margin-right: 53.3333333333px;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  width: 1180px;
+  height: 180px;
+}
+footer .bg {
+  width: 1000px;
+  height: 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+footer .bg > h1 {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  margin: 0 auto;
+}
+footer .bg ul {
+  display: inline-block;
+  list-style-type: none;
+}
+footer .bg ul li {
+  float: left;
+  margin: 0 0;
+}
+footer .bg ul li a {
+  text-decoration: none;
+  font-weight: 1000;
+  color: #cdb6b6;
+  font-size: 13px;
+}
+footer .bg ul li a:hover {
+  color: #765a9b;
+}
+footer .bg ul li {
+  display: inline-block;
+  padding: 0 15px;
+  border-right: 2px solid white;
+}
+footer .bg ul li:last-child {
+  border-right: none;
+}
+footer .bg ul {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
 }/*# sourceMappingURL=index.css.map */

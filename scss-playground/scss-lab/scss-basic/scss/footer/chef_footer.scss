@@ -1,0 +1,11 @@
+@use './business.scss' as bus;
+
+
+footer {
+  background-color: navy;
+  color: white;
+  width: 1180px;
+  height: 180px;
+
+  @include bus.business;
+}
