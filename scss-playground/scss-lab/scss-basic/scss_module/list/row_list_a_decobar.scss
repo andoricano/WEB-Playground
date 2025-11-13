@@ -1,6 +1,8 @@
 @use "sass:map";
 @use "./row_list_a_bar.scss" as n;
 
+//사이 사이에 bar가 있음.
+//들어오는 문자열에 따라 deco 기호를 다르게 하는 식으로 변경하는 것도 좋을 듯.
 @mixin row_list_a_decobar(
   $li-margin: 0 30px 15px,
   $a-color: #000,

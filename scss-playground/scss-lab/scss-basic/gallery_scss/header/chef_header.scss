@@ -1,12 +1,31 @@
-header {
+.header_layout{
+  margin: 0 auto;
   position: relative;
   width: 1180px;
-  height: 120px;
+}
 
-  >h1 {
+header {
+  width: 1180px;
+  height: 120px;
+  position: fixed;
+  background: #ffffff29;
+  border-bottom: 2px solid black;
+  z-index: 1;
+
+  >h1 a {
     position: absolute;
     left: 10px;
     bottom: 15px;
-  }
+    text-decoration: none;
+    color: inherit;
 
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      text-decoration: none;
+      outline: none;
+      color: inherit;
+    }
+  }
 }
