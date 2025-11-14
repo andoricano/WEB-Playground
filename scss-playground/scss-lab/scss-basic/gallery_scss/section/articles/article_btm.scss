@@ -1,0 +1,50 @@
+@use '../../../scss_module/text/img_content.scss' as ic;
+
+$life: '../../../rsc/1000x371.png';
+$nomad: '../../../rsc/1000x361.png';
+
+//안에 패턴을 mixin으로 구성할지 말지 반복문을 쓸지 내비둘지 고민해야할 것.
+@mixin article_btm {
+    div.life {
+        width: 1000px;
+        height: 371px;
+        position: relative;
+
+        @include ic.img_content($bg-img: $life,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 30px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+
+    div.nomad {
+        width: 1000px;
+        height: 361px;
+        position: relative;
+        margin-left: 10px;
+
+        @include ic.img_content($bg-img: $nomad,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 30px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+    }
+}

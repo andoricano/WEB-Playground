@@ -1,6 +1,6 @@
 @use './articles/article_top.scss' as a_top;
 @use './articles/article_mid.scss' as a_mid;
-
+@use './articles/article_btm.scss' as a_btm;
 
 section {
   padding: 130px 10px 0px 10px;
@@ -14,5 +14,6 @@ section {
 
   @include a_top.article_top;
   @include a_mid.article_mid;
+  @include a_btm.article_btm;
   
 }
