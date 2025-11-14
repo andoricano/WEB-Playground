@@ -1,0 +1,98 @@
+@use "sass:list";
+@use "./title_content.scss" as tc;
+
+// 기본적으로 img 위에 txt가 있는 경우가 많아서 만든 mixin
+@mixin img_content(
+    $bg-img: null,
+    $text-position: (0 0 0 0),
+    $title-bgc: transparent,
+    $title-text-color: #000,
+    $title-size: 80px,
+    $title-margin: 0,
+    $title-weight: 1000,
+    $content-bgc: transparent,
+    $content-text-color: #000,
+    $content-size: 25px,
+    $content-margin: 0,
+    $content-weight: 600) {
+
+    @if $bg-img != null {
+        background-image: url(#{$bg-img});
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+
+    p {
+        
+        position: absolute;
+        top: list.nth($text-position, 1);
+        right: list.nth($text-position, 2);
+        bottom: list.nth($text-position, 3);
+        left: list.nth($text-position, 4);
+        @include tc.title_content($title-bgc: $title-bgc,
+            $title-text-color: $title-text-color,
+            $title-size: $title-size,
+            $title-margin: $title-margin,
+            $title-weight: $title-weight,
+            $content-bgc: $content-bgc,
+            $content-text-color: $content-text-color,
+            $content-size: $content-size,
+            $content-margin: $content-margin,
+            $content-weight: $content-weight );
+    }
+}@mixin img_content(
+    $bg-img: null,
+
+    $text-position: (
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    ),
+
+    $title-bgc: transparent,
+    $title-text-color: #000,
+    $title-size: 80px,
+    $title-margin: 0,
+    $title-weight: 1000,
+
+    $content-bgc: transparent,
+    $content-text-color: #000,
+    $content-size: 25px,
+    $content-margin: 0,
+    $content-weight: 600
+) {
+
+    @if $bg-img != null {
+        background-image: url(#{$bg-img});
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    p {
+        position: absolute;
+        top: map.get($text-position, top);
+        right: map.get($text-position, right);
+        bottom: map.get($text-position, bottom);
+        left: map.get($text-position, left);
+
+        @include tc.title_content(
+            $title-bgc: $title-bgc,
+            $title-text-color: $title-text-color,
+            $title-size: $title-size,
+            $title-margin: $title-margin,
+            $title-weight: $title-weight,
+
+            $content-bgc: $content-bgc,
+            $content-text-color: $content-text-color,
+            $content-size: $content-size,
+            $content-margin: $content-margin,
+            $content-weight: $content-weight
+        );
+    }
+}

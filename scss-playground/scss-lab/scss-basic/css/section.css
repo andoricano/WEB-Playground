@@ -1,39 +1,9 @@
 section {
-  position: relative;
-  width: 1080px;
-  height: 450px;
-}
-section > p {
-  margin: 40px auto;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 1000;
+  padding: 130px 0 0 0;
+  width: 1000px;
+  font-size: 0;
 }
 section article {
-  width: 230px;
-  margin: 0px auto;
+  position: relative;
   float: left;
-}
-section article > p:first-of-type {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 16px;
-  font-weight: 1000;
-}
-section article > p:not(:first-of-type) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-}
-section article:nth-child(2) {
-  margin-right: 53.3333333333px;
-}
-section article:nth-child(3) {
-  margin-right: 53.3333333333px;
-}
-section article:nth-child(4) {
-  margin-right: 53.3333333333px;
 }/*# sourceMappingURL=section.css.map */

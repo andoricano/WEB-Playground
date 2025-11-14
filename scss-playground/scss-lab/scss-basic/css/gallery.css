@@ -82,4 +82,21 @@ nav ul li a:hover {
 }
 .util_list ul li a:hover {
   color: #ad9cc3;
+}
+
+.p-common {
+  position: absolute;
+  font-weight: 600;
+  text-align: start;
+  color: white;
+}
+
+section {
+  padding: 130px 0 0 0;
+  width: 1000px;
+  font-size: 0;
+}
+section article {
+  position: relative;
+  float: left;
 }/*# sourceMappingURL=gallery.css.map */
