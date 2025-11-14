@@ -5,7 +5,7 @@ $frozen: '../../../rsc/290x190.png';
 $present: '../../../rsc/290x95-1.png';
 $good: '../../../rsc/290x95-2.png';
 
-
+//안에 패턴을 mixin으로 구성할지 말지 반복문을 쓸지 내비둘지 고민해야할 것.
 @mixin article_top {
     div.christmas {
         width: 700px;
@@ -17,7 +17,7 @@ $good: '../../../rsc/290x95-2.png';
                 "left": 40px,
                 "right": auto,
                 "bottom": auto),
-                $title-size:30px,
+            $title-size: 30px,
             $title-text-color: #fff,
             $content-text-color: #fff);
 
@@ -28,4 +28,71 @@ $good: '../../../rsc/290x95-2.png';
         }
     }
 
+    div.frozen {
+        width: 290px;
+        height: 190px;
+        position: relative;
+        margin-left: 10px;
+
+        @include ic.img_content($bg-img: $frozen,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 30px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+    }
+
+
+    div.present {
+        width: 290px;
+        height: 95px;
+        position: relative;
+        margin: 10px 0 0 10px;
+
+        @include ic.img_content($bg-img: $present,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 20px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+
+
+    div.good {
+        width: 290px;
+        height: 95px;
+        position: relative;
+        margin: 10px 0 0 10px;
+
+        @include ic.img_content($bg-img: $good,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 20px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+        }
+    }
 }

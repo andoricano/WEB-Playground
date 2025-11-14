@@ -1,7 +1,9 @@
 @use './articles/article_top.scss' as a_top;
+@use './articles/article_mid.scss' as a_mid;
+
 
 section {
-  padding: 130px 0 0 0;
+  padding: 130px 10px 0px 10px;
   width: 1000px;
   font-size: 0;
 
@@ -11,5 +13,6 @@ section {
   }
 
   @include a_top.article_top;
+  @include a_mid.article_mid;
   
 }

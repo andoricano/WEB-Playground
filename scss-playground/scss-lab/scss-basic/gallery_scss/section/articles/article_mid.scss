@@ -1,0 +1,30 @@
+@use '../../../scss_module/text/img_content.scss' as ic;
+
+$programmer: '../../../rsc/490x240-1.png';
+$gold: '../../../rsc/490x240-2.png';
+$happy: '../../../rsc/500x490.png';
+$life: '../../../rsc/1000x361.png';
+
+//안에 패턴을 mixin으로 구성할지 말지 반복문을 쓸지 내비둘지 고민해야할 것.
+@mixin article_mid {
+    div.programmer {
+        width: 700px;
+        height: 400px;
+        position: relative;
+
+        @include ic.img_content($bg-img: $programmer,
+            $text-position: ("top": 40px,
+                "left": 40px,
+                "right": auto,
+                "bottom": auto),
+            $title-size: 30px,
+            $title-text-color: #fff,
+            $content-text-color: #fff);
+
+        p {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+}

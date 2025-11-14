@@ -1,13 +1,14 @@
-header {
+.header_layout {
+  margin: 0 auto;
   position: relative;
   width: 1180px;
-  height: 120px;
 }
-header > h1 {
-  position: absolute;
-  left: 10px;
-  bottom: 15px;
-}/*# sourceMappingURL=chef_header.css.map */07843137);
+
+header {
+  width: 1180px;
+  height: 120px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1607843137);
   border-bottom: 2px solid black;
   z-index: 1;
 }
