@@ -9,6 +9,7 @@ $nomad: '../../../rsc/1000x361.png';
         width: 1000px;
         height: 371px;
         position: relative;
+        margin : 10px 0;
 
         @include ic.img_content($bg-img: $life,
             $text-position: ("top": 40px,
@@ -22,7 +23,6 @@ $nomad: '../../../rsc/1000x361.png';
         p {
             position: absolute;
             right: 10px;
-            bottom: 10px;
         }
     }
 
@@ -30,7 +30,6 @@ $nomad: '../../../rsc/1000x361.png';
         width: 1000px;
         height: 361px;
         position: relative;
-        margin-left: 10px;
 
         @include ic.img_content($bg-img: $nomad,
             $text-position: ("top": 40px,

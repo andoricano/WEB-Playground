@@ -8,11 +8,30 @@ $life: '../../../rsc/1000x361.png';
 //안에 패턴을 mixin으로 구성할지 말지 반복문을 쓸지 내비둘지 고민해야할 것.
 @mixin article_mid {
 
+    div.happy {
+        width: 500px;
+        height: 490px;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+
+        @include ic.img_content($bg-img: $happy,
+            $text-position: ("top": auto,
+                "left": auto,
+                "right": auto,
+                "bottom": 20px),
+            $title-size: 14px,
+            $title-text-color: #000,
+            $content-text-color: #000);
+    }
+
     div.programmer {
         width: 490px;
         height: 240px;
         position: relative;
         float: right;
+        margin-top: 10px;
+        margin-right: 10px;
 
         @include ic.img_content($bg-img: $programmer,
             $text-position: ("top": auto,
@@ -34,29 +53,10 @@ $life: '../../../rsc/1000x361.png';
         height: 240px;
         position: relative;
         float: right;
+        margin-top: 10px;
+        margin-right: 10px;
 
         @include ic.img_content($bg-img: $gold,
-            $text-position: ("top": auto,
-                "left": auto,
-                "right": auto,
-                "bottom": 20px),
-            $title-size: 14px,
-            $title-text-color: #000,
-            $content-text-color: #000);
-
-        p {
-            position: absolute;
-            margin: 0 95px;
-        }
-    }
-
-    div.happy {
-        width: 490px;
-        height: 490px;
-        position: relative;
-        float: right;
-
-        @include ic.img_content($bg-img: $happy,
             $text-position: ("top": auto,
                 "left": auto,
                 "right": auto,

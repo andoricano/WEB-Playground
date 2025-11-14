@@ -85,9 +85,10 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 130px 10px 0px 10px;
+  padding: 130px 10px 10px 10px;
   width: 1000px;
   font-size: 0;
+  overflow: hidden;
 }
 section article > div {
   position: relative;
@@ -212,11 +213,39 @@ section div.good p {
   right: 10px;
   bottom: 20px;
 }
+section div.happy {
+  width: 500px;
+  height: 490px;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  background-image: url(../../../rsc/500x490.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section div.happy > p:first-of-type {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: 1000;
+}
+section div.happy > p:not(:first-of-type) {
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
 section div.programmer {
   width: 490px;
   height: 240px;
   position: relative;
   float: right;
+  margin-top: 10px;
+  margin-right: 10px;
   background-image: url(../../../rsc/490x240-1.png);
   background-size: cover;
   background-position: center;
@@ -246,6 +275,8 @@ section div.gold {
   height: 240px;
   position: relative;
   float: right;
+  margin-top: 10px;
+  margin-right: 10px;
   background-image: url(../../../rsc/490x240-2.png);
   background-size: cover;
   background-position: center;
@@ -270,39 +301,11 @@ section div.gold p {
   position: absolute;
   margin: 0 95px;
 }
-section div.happy {
-  width: 490px;
-  height: 490px;
-  position: relative;
-  float: right;
-  background-image: url(../../../rsc/500x490.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-section div.happy > p:first-of-type {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 14px;
-  font-weight: 1000;
-}
-section div.happy > p:not(:first-of-type) {
-  margin: 0;
-  background-color: transparent;
-  color: #000;
-  font-size: 25px;
-  font-weight: 600;
-}
-section div.happy p {
-  position: absolute;
-  margin: 0 95px;
-}
 section div.life {
   width: 1000px;
   height: 371px;
   position: relative;
+  margin: 10px 0;
   background-image: url(../../../rsc/1000x371.png);
   background-size: cover;
   background-position: center;
@@ -326,13 +329,11 @@ section div.life > p:not(:first-of-type) {
 section div.life p {
   position: absolute;
   right: 10px;
-  bottom: 10px;
 }
 section div.nomad {
   width: 1000px;
   height: 361px;
   position: relative;
-  margin-left: 10px;
   background-image: url(../../../rsc/1000x361.png);
   background-size: cover;
   background-position: center;

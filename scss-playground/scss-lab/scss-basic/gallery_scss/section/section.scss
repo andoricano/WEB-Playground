@@ -3,11 +3,12 @@
 @use './articles/article_btm.scss' as a_btm;
 
 section {
-  padding: 130px 10px 0px 10px;
+  padding: 130px 10px 10px 10px;
   width: 1000px;
   font-size: 0;
+  overflow: hidden;
 
-  article > div {
+  article>div {
     position: relative;
     float: left;
   }
@@ -15,5 +16,5 @@ section {
   @include a_top.article_top;
   @include a_mid.article_mid;
   @include a_btm.article_btm;
-  
+
 }
