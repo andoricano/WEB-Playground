@@ -210,8 +210,8 @@ section div.good > p:not(:first-of-type) {
 }
 section div.good p {
   position: absolute;
-  right: 10px;
-  bottom: 20px;
+  right: 30px;
+  bottom: 40px;
 }
 section div.happy {
   width: 500px;
@@ -313,10 +313,10 @@ section div.life {
   position: relative;
 }
 section div.life > p:first-of-type {
-  margin: 0;
+  margin: 160px auto;
   background-color: transparent;
   color: #fff;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 1000;
 }
 section div.life > p:not(:first-of-type) {
@@ -327,13 +327,14 @@ section div.life > p:not(:first-of-type) {
   font-weight: 600;
 }
 section div.life p {
-  position: absolute;
-  right: 10px;
+  text-align: center;
+  text-shadow: 3px 10px 3px black;
 }
 section div.nomad {
   width: 1000px;
   height: 361px;
   position: relative;
+  font-size: 16px;
   background-image: url(../../../rsc/1000x361.png);
   background-size: cover;
   background-position: center;
@@ -344,7 +345,7 @@ section div.nomad > p:first-of-type {
   margin: 0;
   background-color: transparent;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 1000;
 }
 section div.nomad > p:not(:first-of-type) {
@@ -356,6 +357,11 @@ section div.nomad > p:not(:first-of-type) {
 }
 section div.nomad p {
   position: absolute;
-  top: 50px;
-  left: 10px;
+  right: 30px;
+  bottom: 150px;
+}
+section div.nomad p span {
+  display: inline;
+  font-size: 30px;
+  font-weight: 700;
 }/*# sourceMappingURL=gallery.css.map */

@@ -16,10 +16,6 @@ $life: '../../../rsc/1000x361.png';
         margin-top: 10px;
 
         @include ic.img_content($bg-img: $happy,
-            $text-position: ("top": auto,
-                "left": auto,
-                "right": auto,
-                "bottom": 20px),
             $title-size: 14px,
             $title-text-color: #000,
             $content-text-color: #000);
@@ -34,10 +30,6 @@ $life: '../../../rsc/1000x361.png';
         margin-right: 10px;
 
         @include ic.img_content($bg-img: $programmer,
-            $text-position: ("top": auto,
-                "left": auto,
-                "right": auto,
-                "bottom": 20px),
             $title-size: 14px,
             $title-text-color: #000,
             $content-text-color: #000);
@@ -57,10 +49,6 @@ $life: '../../../rsc/1000x361.png';
         margin-right: 10px;
 
         @include ic.img_content($bg-img: $gold,
-            $text-position: ("top": auto,
-                "left": auto,
-                "right": auto,
-                "bottom": 20px),
             $title-size: 14px,
             $title-text-color: #000,
             $content-text-color: #000);

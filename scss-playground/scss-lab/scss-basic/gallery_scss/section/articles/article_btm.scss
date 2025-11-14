@@ -9,20 +9,16 @@ $nomad: '../../../rsc/1000x361.png';
         width: 1000px;
         height: 371px;
         position: relative;
-        margin : 10px 0;
+        margin: 10px 0;
 
         @include ic.img_content($bg-img: $life,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
-            $title-size: 30px,
+            $title-size: 50px,
             $title-text-color: #fff,
+            $title-margin:160px auto,
             $content-text-color: #fff);
-
         p {
-            position: absolute;
-            right: 10px;
+            text-align: center;
+            text-shadow: 3px 10px 3px black
         }
     }
 
@@ -30,20 +26,23 @@ $nomad: '../../../rsc/1000x361.png';
         width: 1000px;
         height: 361px;
         position: relative;
+        font-size: 16px;
 
         @include ic.img_content($bg-img: $nomad,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
-            $title-size: 30px,
+            $title-size: 20px,
             $title-text-color: #fff,
             $content-text-color: #fff);
 
         p {
             position: absolute;
-            top: 50px;
-            left: 10px;
+            right: 30px;
+            bottom: 150px;
+
+            span {
+                display: inline;
+                font-size: 30px;
+                font-weight: 700;
+            }
         }
     }
 }

@@ -3,7 +3,6 @@
 
 // 기본적으로 img 위에 txt가 있는 경우가 많아서 만든 mixin
 @mixin img_content($bg-img: null,
-    $text-position: (0 0 0 0),
     $title-bgc: transparent,
     $title-text-color: #000,
     $title-size: 80px,

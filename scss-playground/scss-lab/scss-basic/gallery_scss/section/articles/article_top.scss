@@ -13,10 +13,6 @@ $good: '../../../rsc/290x95-2.png';
         position: relative;
 
         @include ic.img_content($bg-img: $christmas,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
             $title-size: 30px,
             $title-text-color: #fff,
             $content-text-color: #fff);
@@ -35,10 +31,6 @@ $good: '../../../rsc/290x95-2.png';
         margin-left: 10px;
 
         @include ic.img_content($bg-img: $frozen,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
             $title-size: 30px,
             $title-text-color: #fff,
             $content-text-color: #fff);
@@ -58,10 +50,6 @@ $good: '../../../rsc/290x95-2.png';
         margin: 10px 0 0 10px;
 
         @include ic.img_content($bg-img: $present,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
             $title-size: 20px,
             $title-text-color: #fff,
             $content-text-color: #fff);
@@ -81,18 +69,14 @@ $good: '../../../rsc/290x95-2.png';
         margin: 10px 0 0 10px;
 
         @include ic.img_content($bg-img: $good,
-            $text-position: ("top": 40px,
-                "left": 40px,
-                "right": auto,
-                "bottom": auto),
             $title-size: 20px,
             $title-text-color: #fff,
             $content-text-color: #fff);
 
         p {
             position: absolute;
-            right: 10px;
-            bottom: 20px;
+            right: 30px;
+            bottom: 40px;
         }
     }
 }
