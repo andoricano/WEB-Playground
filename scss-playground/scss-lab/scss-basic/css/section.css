@@ -214,6 +214,10 @@ section div.gold > p:not(:first-of-type) {
 section div.gold p {
   position: absolute;
   margin: 0 95px;
+  font-size: 30px;
+  right: 20px;
+  bottom: 30px;
+  color: gold;
 }
 section div.life {
   width: 1000px;
@@ -227,10 +231,10 @@ section div.life {
   position: relative;
 }
 section div.life > p:first-of-type {
-  margin: 0;
+  margin: 160px auto;
   background-color: transparent;
   color: #fff;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 1000;
 }
 section div.life > p:not(:first-of-type) {
@@ -241,8 +245,8 @@ section div.life > p:not(:first-of-type) {
   font-weight: 600;
 }
 section div.life p {
-  position: absolute;
-  right: 10px;
+  text-align: center;
+  text-shadow: 3px 10px 3px black;
 }
 section div.nomad {
   width: 1000px;
@@ -270,8 +274,9 @@ section div.nomad > p:not(:first-of-type) {
   font-weight: 600;
 }
 section div.nomad p {
-  top: 50px;
-  left: 10px;
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
 }
 section div.nomad p span {
   display: inline;

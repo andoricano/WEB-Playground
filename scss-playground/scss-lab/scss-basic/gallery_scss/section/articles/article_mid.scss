@@ -32,12 +32,16 @@ $life: '../../../rsc/1000x361.png';
         @include ic.img_content($bg-img: $programmer,
             $title-size: 14px,
             $title-text-color: #000,
-            $content-text-color: #000);
+            $title-margin:0 95px,
+            $content-text-color: #000
+            );
 
         p {
+            width: 300px;
             position: absolute;
-            margin: 0 95px;
+            bottom: 20px;
         }
+
     }
 
     div.gold {
@@ -49,13 +53,14 @@ $life: '../../../rsc/1000x361.png';
         margin-right: 10px;
 
         @include ic.img_content($bg-img: $gold,
-            $title-size: 14px,
-            $title-text-color: #000,
-            $content-text-color: #000);
+            $title-size: 30px,
+            $title-text-color: gold);
 
         p {
             position: absolute;
             margin: 0 95px;
+            right: 20px;
+            bottom: 30px;
         }
     }
 }
