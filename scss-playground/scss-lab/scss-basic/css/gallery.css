@@ -325,7 +325,7 @@ section div.life > p:first-of-type {
 section div.life > p:not(:first-of-type) {
   margin: 0;
   background-color: transparent;
-  color: #fff;
+  color: #000;
   font-size: 25px;
   font-weight: 600;
 }

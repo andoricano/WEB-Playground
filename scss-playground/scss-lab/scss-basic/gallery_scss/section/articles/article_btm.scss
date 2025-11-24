@@ -14,8 +14,7 @@ $nomad: '../../../rsc/1000x361.png';
         @include ic.img_content($bg-img: $life,
             $title-size: 50px,
             $title-text-color: #fff,
-            $title-margin:160px auto,
-            $content-text-color: #fff);
+            $title-margin:160px auto);
         p {
             text-align: center;
             text-shadow: 3px 10px 3px black
